@@ -1,16 +1,15 @@
 <div class="container">
   <table class="racer_table">
-    <tr class="strip" id="player1_strip">
-      <td class="active"></td>
-    </tr>
-    <tr class="strip" id="player2_strip">
-      <td class="active"></td>
-    </tr>
-    <tr class="strip" id="player3_strip">
-      <td class="active"></td>
-    </tr>
-    <tr class="strip" id="player4_strip">
-      <td class="active"></td>
-    </tr>
+    <% @game.players.each do |player|  %>
+      <tr class="strip" id="<%= player.id %>">
+        <td class="active"></td>
+      </tr>
+    <% end %>
   </table>
-</div>
+</div> 
+
+<script>
+  var gameId = <%= @game.id %>
+</script>
+
+

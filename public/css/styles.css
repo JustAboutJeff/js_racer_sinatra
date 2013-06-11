@@ -6,6 +6,12 @@ div.container {
   position: relative;
 }
 
+div#game_over {
+  text-align: center;
+  background: black;
+  color: white;
+}
+
 table.racer_table {
   position: absolute;
   top: 610px;
@@ -18,22 +24,22 @@ table.racer_table td {
   display:inline-block;
 }
 
-#player1_strip td.active {
+.strip:nth-child(1) td.active {
   background: url(/img/bike_red.png) no-repeat;
   padding: 5px 0;
 }
 
-#player2_strip td.active {
+.strip:nth-child(2) td.active {
   background: url(/img/bike_blue.png) no-repeat;
   padding: 5px 0;
 }
 
-#player3_strip td.active {
+.strip:nth-child(3) td.active {
   background: url(/img/bike_green.png) no-repeat;
   padding: 5px 0;
 }
 
-#player4_strip td.active {
+.strip:nth-child(4) td.active {
   background: url(/img/bike_yellow.png) no-repeat;
   padding: 5px 0;
 }
@@ -52,6 +58,7 @@ input[type='submit'] {
 
 label {
   display: inline-block;
+  color: white;
 }
 
 div#login {
