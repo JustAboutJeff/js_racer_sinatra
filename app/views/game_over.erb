@@ -1,8 +1,14 @@
-<div class="container">
+<div id="victory_screen">
+	<audio autoplay hidden="true">
+      <source src="victory.mp3" type="audio/mpeg">
+      <embed height="0" width="0" src="victory.mp3">
+   </audio>
+
   <div id="game_over">
-    <h1> SECRET LINK: http://localhost:9393/game_over/<%= @game.id %></h1>
-    <h1> FIRST PLACE: <%= @game.winner %></h1>
-    <h1> WITH TIME OF: <%= @game.duration %></h1>
+    <!-- <h1> SECRET LINK: http://localhost:9393/game_over/<%= @game.id %></h1> -->
+    <h1> You Win Sucka!!! </h1>
+    <h3> FIRST PLACE: Player <%= @game.winner %></h3>
+    <h3> WITH TIME OF: <%= @game.duration %> Seconds</h3>
   </div>
 </div>
 
