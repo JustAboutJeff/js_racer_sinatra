@@ -97,10 +97,11 @@ input[type="text"]
 }
 
 div#victory_screen {
-  background-image: url(/img/win.jpg);
+  background-image: url(/img/excitebike.gif);
   background-repeat:no-repeat;
   background-position: center;
-  background-color: #0012b0;
+  background-color: black;
+  /*background-color: #0012b0;*/
   height: 950px;
 }
 
